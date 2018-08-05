@@ -10,5 +10,8 @@
         android:id="@+id/navigation_match"
         android:icon="@drawable/ic_person_pin_black_48dp"
         android:title="@string/title_matchs" />
-
+    <item
+        android:id="@+id/log_out"
+        android:icon="@drawable/baseline_exit_to_app_black_48"
+        android:title="@string/title_logout" />
 </menu>
