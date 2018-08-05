@@ -38,16 +38,6 @@ public class MainActivity extends AppCompatActivity {
                     fragment = new CariLawanFragment();
                     loadFragment(fragment);
                     return true;
-                case R.id.navigation_history:
-                    toolbar.setTitle(getString(R.string.title_matchs));
-                    fragment = new CariLawanFragment();
-                    loadFragment(fragment);
-                    return true;
-                case R.id.navigation_locker_room:
-                    toolbar.setTitle(getString(R.string.title_matchs));
-                    fragment = new CariLawanFragment();
-                    loadFragment(fragment);
-                    return true;
             }
             return false;});
     }

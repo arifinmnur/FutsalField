@@ -7,6 +7,9 @@ package com.riverstream.futsalfield.data.model;
 public class User {
     private String id, email, phone, namaTeam;
 
+    public User() {
+    }
+
     public String getId() {
         return id;
     }
