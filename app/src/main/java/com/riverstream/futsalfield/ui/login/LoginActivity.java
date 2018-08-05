@@ -44,7 +44,7 @@ public class LoginActivity extends AppCompatActivity {
     @Override
     protected void onStart() {
         super.onStart();
-
+//
         mUser= mAuth.getCurrentUser();
         if (mUser != null){
             Toast.makeText(this,"Anda Sudah Login",Toast.LENGTH_SHORT);
