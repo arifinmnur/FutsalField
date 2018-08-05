@@ -43,6 +43,7 @@ public class LoginActivity extends AppCompatActivity {
 
     private String email, password;
     private TextInputEditText emailTV, passwordTV;
+    public TextView linkRegis;
     public Button buttonLogin;
     public LoginButton buttonLoginFb;
     public CallbackManager mCallbackManager;
@@ -58,6 +59,7 @@ public class LoginActivity extends AppCompatActivity {
         mProgressBar = (ProgressBar) findViewById(R.id.progress_bar);
         emailTV     = (TextInputEditText) findViewById(R.id.etEmail);
         passwordTV  = (TextInputEditText) findViewById(R.id.etPassword);
+        linkRegis = (TextView) findViewById(R.id.linkRegis);
         buttonLogin = (Button) findViewById(R.id.btnServerLogin);
         mCallbackManager = CallbackManager.Factory.create();
         buttonLoginFb = findViewById(R.id.ibFbLogin);
@@ -83,6 +85,10 @@ public class LoginActivity extends AppCompatActivity {
             startActivity(new Intent(LoginActivity.this, MainActivity.class));
             finish();
         }
+
+        linkRegis.setOnClickListener((View v)-> {
+            startActivity(new Intent(LoginActivity.this, RegisterActivity.class));
+        });
 
         buttonLogin.setOnClickListener((View v)->{
             email       = emailTV.getText().toString();

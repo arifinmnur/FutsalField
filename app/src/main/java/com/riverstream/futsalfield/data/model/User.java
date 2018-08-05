@@ -5,7 +5,29 @@ package com.riverstream.futsalfield.data.model;
  */
 
 public class User {
-    private String id, email, phone, namaTeam;
+    private String id;
+    private String email;
+    private String name;
+    private String city;
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getCity() {
+        return city;
+    }
+
+    public void setCity(String city) {
+        this.city = city;
+    }
+
+    private String phone;
+    private String namaTeam;
 
     public String getId() {
         return id;

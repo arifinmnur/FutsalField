@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/myteam" android:title="MyTeam"/>
+    <item android:id="@+id/preferences" android:title="Preferences"/>
+    <item android:id="@+id/help" android:title="Help"/>
+    <item android:id="@+id/about" android:title="AboutUs"/>
+    <item android:id="@+id/logout" android:title="Log Out"/>
+</menu>

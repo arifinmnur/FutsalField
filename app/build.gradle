@@ -116,5 +116,3 @@ configurations.all {
     resolutionStrategy.force "com.android.support:support-annotations:$supportLibraryVersion"
     resolutionStrategy.force 'com.google.code.findbugs:jsr305:1.3.9'
 }
-
-
