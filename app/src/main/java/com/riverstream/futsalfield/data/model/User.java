@@ -29,6 +29,9 @@ public class User {
     private String phone;
     private String namaTeam;
 
+    public User() {
+    }
+
     public String getId() {
         return id;
     }

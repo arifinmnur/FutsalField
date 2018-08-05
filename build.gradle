@@ -31,13 +31,13 @@ task clean(type: Delete) {
 // Define versions in a single place
 ext {
     // Sdk and tools
-    minSdkVersion = 16
+    minSdkVersion = 21
     targetSdkVersion = 26
     compileSdkVersion = 26
     buildToolsVersion = '26.1.0'
 
     // App dependencies
-    supportLibraryVersion = '27.0.2'
+    supportLibraryVersion = '27.1.0'
     gsonVersion = '2.8.2'
     calligraphyVersion = '2.2.0'
     glideVersion = '3.7.0'

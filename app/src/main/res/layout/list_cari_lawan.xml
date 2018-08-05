@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/Recycle_list"
+    android:id="@+id/list_Cari_lawan_recyclelist_Cari_lawan_recycle"
     android:layout_width="match_parent"
     android:layout_height="@dimen/list_item_height"
     android:clickable="true"
@@ -14,7 +14,8 @@
     <LinearLayout
         android:id="@+id/list_tgl"
         android:layout_width="@dimen/list_item_width"
-        android:layout_height="@dimen/list_item_height">
+        android:layout_height="@dimen/list_item_height"
+        android:orientation="vertical">
 
     </LinearLayout>
 
@@ -61,13 +62,24 @@
             <TextView
                 android:id="@+id/tempatTanding_id"
                 android:layout_width="match_parent"
-                android:layout_height="44dp"
+                android:layout_height="22dp"
                 android:layout_below="@id/namaTeam_id"
                 android:layout_weight="1"
                 android:gravity="top"
                 android:textAppearance="?android:textAppearanceMedium"
                 android:textColor="@android:color/black"
                 tools:text="one" />
+            <TextView
+                android:id="@+id/noHp_id"
+                android:layout_width="match_parent"
+                android:layout_height="22dp"
+                android:layout_below="@id/tempatTanding_id"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/black"
+                tools:text="dua" />
+
         </RelativeLayout>
     </RelativeLayout>
 </RelativeLayout>

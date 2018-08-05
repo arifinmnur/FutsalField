@@ -35,18 +35,21 @@ android {
 }
 
 dependencies {
-    implementation 'com.squareup.picasso:picasso:2.5.2'
-    implementation 'com.facebook.android:facebook-android-sdk: 4.28.0'
+
+    //implementation 'com.facebook.android:facebook-android-sdk: 4.28.0'
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     //facebook layout_login
-    implementation 'com.facebook.android:facebook-android-sdk:[4,5)'
-    implementation 'com.google.android.gms:play-services-auth:15.0.1'
+    implementation 'com.facebook.android:facebook-android-sdk:4.35.0'
+    ///implementation 'com.google.android.gms:play-services-auth:15.0.1'
     //firebase
     implementation 'com.google.firebase:firebase-auth:16.0.2'
     implementation 'com.google.firebase:firebase-core:16.0.1'
-    implementation 'com.google.firebase:firebase-database:16.0.1'
     implementation 'com.google.firebase:firebase-storage:16.0.1'
     implementation 'com.google.firebase:firebase-messaging:17.1.0'
+    // FirebaseUI for Firebase Realtime Database
+    implementation 'com.firebaseui:firebase-ui-database:4.1.0'
+    implementation 'com.android.support:multidex:1.0.3'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
 
     // android support libraries
     implementation 'com.android.support.constraint:constraint-layout:1.1.2'
@@ -65,9 +68,6 @@ dependencies {
     implementation 'com.android.support:support-v4:26.1.0'
     annotationProcessor "android.arch.persistence.room:compiler:$rootProject.roomDatabase"
 
-    // font
-    implementation "uk.co.chrisjenx:calligraphy:$rootProject.calligraphyVersion"
-
     // image
     implementation "com.github.bumptech.glide:glide:$rootProject.glideVersion"
 
@@ -78,20 +78,17 @@ dependencies {
     debugImplementation "com.amitshekhar.android:debug-db:$rootProject.debugDBVersion"
 
     // dependency injection
-    implementation "com.google.dagger:dagger:$rootProject.dagger2Version"
-    annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.dagger2Version"
-    annotationProcessor "com.google.dagger:dagger-android-processor:$rootProject.dagger2Version"
-    implementation "com.google.dagger:dagger-android-support:$rootProject.dagger2Version"
+    //implementation "com.google.dagger:dagger:$rootProject.dagger2Version"
+    //annotationProcessor "com.google.dagger:dagger-compiler:$rootProject.dagger2Version"
+    //annotationProcessor "com.google.dagger:dagger-android-processor:$rootProject.dagger2Version"
+    //implementation "com.google.dagger:dagger-android-support:$rootProject.dagger2Version"
 
     // reactive
     implementation "io.reactivex.rxjava2:rxjava:$rootProject.rxjava2Version"
     implementation "io.reactivex.rxjava2:rxandroid:$rootProject.rxandroidVersion"
 
-    // swipe view
-    implementation "com.mindorks:placeholderview:$rootProject.placeholderviewVersion"
-
-    // logger
-    implementation "com.jakewharton.timber:timber:$rootProject.timberVersion"
+    // font
+    implementation "uk.co.chrisjenx:calligraphy:$rootProject.calligraphyVersion"
 
     // dependencies for local unit tests
     testImplementation "junit:junit:$rootProject.ext.junitVersion"
