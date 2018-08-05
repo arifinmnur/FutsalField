@@ -8,8 +8,16 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.MenuItem;
+import android.view.Window;
+
+import com.facebook.AccessTokenTracker;
+import com.facebook.CallbackManager;
+import com.facebook.login.widget.LoginButton;
+
+import java.util.Arrays;
 
 public class MainActivity extends AppCompatActivity {
+    CallbackManager callbackManager;
     private ActionBar toolbar;
     private BottomNavigationView navigation;
     @Override
@@ -18,6 +26,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         toolbar = getSupportActionBar();
         //toolbar.setTitle("Home");
+
 
         navigation = findViewById(R.id.navigation);
         navigation.setOnNavigationItemSelectedListener((@NonNull MenuItem item)->{
