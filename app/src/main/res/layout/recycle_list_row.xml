@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/Recycle_list"
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/list_item_height"
+    android:clickable="true"
+    android:focusable="true"
+    android:orientation="vertical"
+    android:foreground="?android:attr/selectableItemBackground"
+    android:background="?android:selectableItemBackground"
+    android:descendantFocusability="blocksDescendants">
+
+    <LinearLayout
+        android:id="@+id/list_tgl"
+        android:layout_width="@dimen/list_item_width"
+        android:layout_height="@dimen/list_item_height">
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/text_containerRC"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/list_item_height"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/list_tgl"
+        android:paddingLeft="16dp">
+
+        <ImageView
+            android:id="@+id/imagesRC"
+            android:layout_width="@dimen/list_item_image"
+            android:layout_height="@dimen/list_item_image"
+            android:layout_marginTop="16dp"
+            android:layout_marginBottom="16dp"
+            />
+
+        <RelativeLayout
+            android:id="@+id/text_container2"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/list_item_height"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_toRightOf="@+id/imagesRC"
+            android:paddingLeft="16dp">
+
+            <TextView
+                android:id="@+id/namaTeam_id"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_weight="1"
+                android:gravity="bottom"
+                android:textAppearance="?android:textAppearanceLarge"
+                android:textColor="@android:color/black"
+                android:textStyle="bold"
+                tools:text="lutti" />
+
+            <TextView
+                android:id="@+id/alamatTeam_id"
+                android:layout_width="match_parent"
+                android:layout_height="44dp"
+                android:layout_below="@id/namaTeam_id"
+                android:layout_weight="1"
+                android:gravity="top"
+                android:textAppearance="?android:textAppearanceMedium"
+                android:textColor="@android:color/black"
+                tools:text="one" />
+        </RelativeLayout>
+    </RelativeLayout>
+</RelativeLayout>

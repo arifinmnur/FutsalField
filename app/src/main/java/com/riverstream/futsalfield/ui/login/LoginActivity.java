@@ -1,5 +1,6 @@
 package com.riverstream.futsalfield.ui.login;
 
+import android.content.Intent;
 import android.support.annotation.NonNull;
 import android.support.design.widget.TextInputEditText;
 import android.support.v7.app.AppCompatActivity;
@@ -17,6 +18,7 @@ import com.google.android.gms.tasks.Task;
 import com.google.firebase.auth.AuthResult;
 import com.google.firebase.auth.FirebaseAuth;
 import com.google.firebase.auth.FirebaseUser;
+import com.riverstream.futsalfield.MainActivity;
 import com.riverstream.futsalfield.R;
 
 public class LoginActivity extends AppCompatActivity {
@@ -47,6 +49,8 @@ public class LoginActivity extends AppCompatActivity {
         if (mUser != null){
             Toast.makeText(this,"Anda Sudah Login",Toast.LENGTH_SHORT);
             Log.v("Hello","Anda Sudah Login email "+ mUser.getEmail()+" password "+mUser.getUid());
+            startActivity(new Intent(LoginActivity.this, MainActivity.class));
+            finish();
         }
 
         buttonLogin.setOnClickListener((View v)->{
@@ -61,6 +65,8 @@ public class LoginActivity extends AppCompatActivity {
                         FirebaseUser user = mAuth.getCurrentUser();
                         Toast.makeText(LoginActivity.this, "Hi "+user.getEmail(),
                                 Toast.LENGTH_LONG).show();
+                        startActivity(new Intent(LoginActivity.this, MainActivity.class));
+                        finish();
                     } else {
                         // If sign in fails, display a message to the user.
                         Toast.makeText(LoginActivity.this, "Authentication failed.",
